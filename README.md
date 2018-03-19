@@ -42,7 +42,7 @@ By default, new notebooks will be created in your home directory. Navigate to a 
 
 6. Install some of the packages that we will use during the course (you will need an internet connection)
 ```jl
-packages = split(
+julia> packages = split(
     """Plots GR PlotlyJS Interact
     BenchmarkTools
     DataFrames Query
@@ -56,7 +56,7 @@ packages = split(
     ForwardDiff
     """)    
 
-for package in packages
+julia> for package in packages
     Pkg.add(package)
 end
 ```
